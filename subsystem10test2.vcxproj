@@ -88,17 +88,18 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <MinimumRequiredVersion>6.3</MinimumRequiredVersion>
-      <AdditionalDependencies>onecore_apiset.lib;ucrt.lib;</AdditionalDependencies>
+      <AdditionalDependencies>onecore_apiset.lib;ucrtd.lib;libcmtd.lib;</AdditionalDependencies>
       <EntryPointSymbol>main</EntryPointSymbol>
       <Version>10.0</Version>
-      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 /DYNAMICBASE %(AdditionalOptions)</AdditionalOptions>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <PreLinkEvent>
@@ -117,17 +118,18 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <MinimumRequiredVersion>6.3</MinimumRequiredVersion>
-      <AdditionalDependencies>onecore_apiset.lib;ucrt.lib;</AdditionalDependencies>
+      <AdditionalDependencies>onecore_apiset.lib;ucrt.lib;libcmt.lib;</AdditionalDependencies>
       <EntryPointSymbol>main</EntryPointSymbol>
       <Version>10.0</Version>
-      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 /DYNAMICBASE %(AdditionalOptions)</AdditionalOptions>
       <ProgramDatabaseFile />
       <StripPrivateSymbols>$(OutDir)$(TargetName).pdb</StripPrivateSymbols>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
@@ -146,17 +148,18 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <MinimumRequiredVersion>6.3</MinimumRequiredVersion>
-      <AdditionalDependencies>onecore_apiset.lib;ucrt.lib;</AdditionalDependencies>
+      <AdditionalDependencies>onecore_apiset.lib;ucrtd.lib;libcmtd.lib;</AdditionalDependencies>
       <EntryPointSymbol>main</EntryPointSymbol>
       <Version>10.0</Version>
-      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 /DYNAMICBASE /HIGHENTROPYVA %(AdditionalOptions)</AdditionalOptions>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <PreLinkEvent>
@@ -175,22 +178,26 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <MinimumRequiredVersion>6.3</MinimumRequiredVersion>
-      <AdditionalDependencies>onecore_apiset.lib;ucrt.lib;</AdditionalDependencies>
+      <MinimumRequiredVersion>10.0</MinimumRequiredVersion>
+      <AdditionalDependencies>onecore_apiset.lib;ucrt.lib;libcmt.lib;</AdditionalDependencies>
       <EntryPointSymbol>main</EntryPointSymbol>
       <Version>10.0</Version>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <SetChecksum>true</SetChecksum>
-      <CETCompat>true</CETCompat>
-      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/STUB:tools\stub.exe /BaseRelocClustering /nocoffgrpinfo /EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO /EMITTOOLVERSIONINFO:NO /FILEALIGN:4096 /DYNAMICBASE /HIGHENTROPYVA %(AdditionalOptions)</AdditionalOptions>
       <ProgramDatabaseFile />
       <StripPrivateSymbols>$(OutDir)$(TargetName).pdb</StripPrivateSymbols>
+      <GenerateMapFile>true</GenerateMapFile>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
     </Link>
     <PreLinkEvent>
       <Command>
